@@ -2,10 +2,10 @@
 # See NIX.md for an overview of module usage.
 {
   inputs = {
-    flake-utils.url = github:numtide/flake-utils;
-    git-ignore-nix.url = github:hercules-ci/gitignore.nix/master;
-    xmonad.url = github:xmonad/xmonad;
-    xmonad-extras.url = github:cafkafk/xmonad-extras/introduce-flake;
+    flake-utils.url = "github:numtide/flake-utils";
+    git-ignore-nix.url = "github:hercules-ci/gitignore.nix/master";
+    xmonad.url = "github:xmonad/xmonad";
+    xmonad-extras.url = "github:cafkafk/xmonad-extras/introduce-flake";
   };
   outputs = { self, flake-utils, nixpkgs, git-ignore-nix, xmonad, xmonad-extras, ... }:
   with xmonad.lib;
